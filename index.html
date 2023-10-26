@@ -42,7 +42,7 @@
         });
 
         // Event-Handler für Tastatureingaben (Rücktaste)
-        canvas.addEventListener("keydown", function(event) {
+        document.addEventListener("keydown", function(event) {
             if (event.key === "Backspace") {
                 textContent = textContent.slice(0, -1);
                 drawText();
