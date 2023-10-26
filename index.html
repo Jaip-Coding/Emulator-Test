@@ -46,6 +46,9 @@
             if (event.key === "Backspace") {
                 textContent = textContent.slice(0, -1);
                 drawText();
+            } else if (event.key.length === "Enter") {
+                textContent += "\n";
+                drawText();
             }
         });
     </script>
