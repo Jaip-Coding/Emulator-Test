@@ -34,7 +34,7 @@
         }
 
         // Event-Handler für Tastatureingaben
-        canvas.addEventListener("keydown", function(event) {
+        document.addEventListener("keydown", function(event) {
             if (event.key.length === 1) {
                 textContent += event.key;
                 drawText();
